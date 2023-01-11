@@ -41,32 +41,26 @@ const Services = () => {
         ))}
       </div>
 
-      <div className="mt-40 ">
-        <div className="grid items-center justify-items-center grid-cols-1 lg:grid-cols-2 md:grid-cols-1">
-          <figure>
-            <img
-              className="max-w-[458px] max-h-[576px] min-w-[70%] min-h-[350px]"
-              src={treatment}
-              alt="Album"
-            />
-          </figure>
-          <div className="card-body w-3/4	">
-            <h2 className="card-title text-5xl font-bold">
-              Exceptional Dental Care, on Your Terms
-            </h2>
-            <br />
-            <p>
+      <div className="hero min-h-screen mx-auto">
+        <div className="hero-content flex-col lg:flex-row">
+          <img
+            src={treatment}
+            className="max-w-sm rounded-lg shadow-2xl"
+            alt="img"
+          />
+          <div className="w-1/2	ml-9">
+            <h1 className="text-5xl font-bold">
+              Exceptional Dental Care, on Your Terms!
+            </h1>
+            <p className="py-6">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsumis that it has a more-or-less normal
               distribution of letters,as opposed to using 'Content here, content
               here', making it look like readable English. Many desktop
-              publishing packages and web page
+              publishing packages and web page.
             </p>
-            <br />
-            <div>
-              <button className="btn btn-primary">GET STARTED</button>
-            </div>
+            <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
       </div>
