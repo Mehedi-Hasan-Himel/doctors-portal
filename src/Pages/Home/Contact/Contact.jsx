@@ -10,7 +10,7 @@ const Contact = () => {
         background: `url(${Appointment})`,
       }}
     >
-      <div className="text-center w-[450px] mx-auto">
+      <div className="text-center lg:w-[450px] mx-auto">
         <h3 className="text-primary font-bold text-xl">Contact Us</h3>
         <h2 className="text-4xl	text-white">Stay connected with us</h2>
         <form className="mt-6 flex flex-col items-center gap-3 ">
