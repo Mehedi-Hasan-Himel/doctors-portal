@@ -1,6 +1,7 @@
 import React from "react";
-import Doctor from "../../../assets/images/doctor.png"
+import Doctor from "../../../assets/images/doctor.png";
 import Appointment from "../../../assets/images/appointment.png";
+import PrimaryButton from "../../../Components/PrimaryButton/PrimaryButton";
 
 const MakeAppooinment = () => {
   return (
@@ -14,12 +15,14 @@ const MakeAppooinment = () => {
         <div className="hero-content flex-col lg:flex-row">
           <img
             src={Doctor}
-            className="-mt-32 lg:w-1/2 hidden md:block rounded-lg"
+            className="-mt-32 -mb-4 lg:w-1/2 hidden md:block rounded-lg"
             alt="img"
           />
           <div>
             <h4 className="text-lg text-primary font-bold">Appointment</h4>
-            <h1 className="text-4xl font-bold text-white">Make an appointment Today!</h1>
+            <h1 className="text-4xl font-bold text-white">
+              Make an appointment Today!
+            </h1>
             <p className="py-6 text-white">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
@@ -28,7 +31,7 @@ const MakeAppooinment = () => {
               here', making it look like readable English. Many desktop
               publishing packages and web page.
             </p>
-            <button className="btn btn-primary text-white">Get Started</button>
+            <PrimaryButton>Appointment</PrimaryButton>
           </div>
         </div>
       </div>

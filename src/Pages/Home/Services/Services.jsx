@@ -4,6 +4,7 @@ import whitening from "../../../assets/images/whitening.png";
 import cavity from "../../../assets/images/cavity.png";
 import treatment from "../../../assets/images/treatment.png";
 import Service from "./Service";
+import PrimaryButton from "../../../Components/PrimaryButton/PrimaryButton";
 
 const Services = () => {
   const servicesData = [
@@ -42,14 +43,16 @@ const Services = () => {
       </div>
 
       <div className="hero min-h-screen mx-auto">
-        <div className="hero-content flex-col lg:flex-row">
-          <img
-            src={treatment}
-            className="max-w-sm rounded-lg shadow-2xl"
-            alt="img"
-          />
-          <div className="w-1/2	ml-9">
-            <h1 className="text-5xl font-bold">
+        <div className="hero-content flex-col lg:flex-row ">
+          <figure>
+            <img
+              src={treatment}
+              className="lg:max-w-sm rounded-lg shadow-2xl sm:mx-auto"
+              alt="img"
+            />
+          </figure>
+          <div className="lg:w-1/2	lg:ml-9">
+            <h1 className="text-5xl sm:text-3xl  font-bold">
               Exceptional Dental Care, on Your Terms!
             </h1>
             <p className="py-6">
@@ -60,7 +63,7 @@ const Services = () => {
               here', making it look like readable English. Many desktop
               publishing packages and web page.
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <PrimaryButton>GET STARTED</PrimaryButton>
           </div>
         </div>
       </div>
