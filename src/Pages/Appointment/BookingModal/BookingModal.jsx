@@ -4,6 +4,16 @@ import React from "react";
 const BookingModal = ({ treatment, selectedDate }) => {
   const { name, slots } = treatment; // treatment is appoinment options just different name.
   const date = format(selectedDate, "PP");
+  const handleBooking = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const slot = form.slot.value;
+    const name = form.name.value;
+    const email = form.email.value;
+    const phone = form.hone.value;
+
+    console.log(date, slot, name, email, phone);
+  };
   return (
     <>
       <input type="checkbox" id="booking-modal" className="modal-toggle" />
@@ -22,19 +32,27 @@ const BookingModal = ({ treatment, selectedDate }) => {
               value={date}
               className="input input-bordered w-full"
             />
-            <select className="select select-bordered ">
+            <select className="select select-bordered " name="slot">
               {slots.map((slot) => (
                 <option value={slot}>{slot}</option>
               ))}
             </select>
             <input
+              name="name"
+              placeholder="Your Name"
               type="text"
-              value={date}
               className="input input-bordered w-full"
             />
             <input
-              type="text"
-              value={date}
+              name="email"
+              type="email"
+              placeholder="Your Email"
+              className="input input-bordered w-full"
+            />
+            <input
+              name="Phone"
+              type="tel"
+              placeholder="Your phone number"
               className="input input-bordered w-full"
             />
             <br />
